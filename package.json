@@ -12,7 +12,7 @@
     "typecheck": "tsc",
     "test": "vitest run",
     "build": "tsc -p tsconfig.build.json",
-    "pack": "npm run build && npm pack"
+    "prepack": "npm run build"
   },
   "devDependencies": {
     "typescript": "^7.0.2",
