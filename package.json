@@ -8,14 +8,23 @@
   "files": [
     "dist"
   ],
+  "bin": {
+    "node-task": "dist/main.js"
+  },
   "scripts": {
+    "start": "tsx src/main.ts",
     "typecheck": "tsc",
     "test": "vitest run",
     "build": "tsc -p tsconfig.build.json",
     "prepack": "npm run build"
   },
   "devDependencies": {
+    "@types/node": "^26.6.5",
+    "tsx": "^4.23.15",
     "typescript": "^7.0.2",
     "vitest": "^5.0.3"
+  },
+  "dependencies": {
+    "commander": "^15.0.0"
   }
 }
